@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@500&display=swap');
+* {
+    margin: 0;
+    font-family: 'Noto Sans HK', sans-serif;
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(205, 207, 209);
+    background-image: url(\pandaback.png) ;
+
+}
+.form>h1 {
+    font-size: 48px;
+    margin: 50px;
+    margin-bottom: 40px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 440px;
+    height: 540px;
+    border-radius: 17px;
+    background-image: url(\insta.png );
+   
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 28px;
+    position: relative;
+    bottom: 20px;
+}
+.items label{
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+label::before{
+    content: " * ";
+    color: red;
+    position: relative;
+    top: 7px;
+    font-size: 25px;
+
+  }
+.items>input {
+    height: 33px;
+    width: 290px;
+    font-size: 18px; 
+    padding-left: 15px;  
+    border-color: rgba(0, 0, 0, 0.993);
+    border-radius: 10px;  
+    font-weight: bold;
+}
+.items input:hover{
+    border-color: rgb(151, 147, 147);
+  }
+.rem {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 7px;
+    margin-top: 18px;    
+
+}  
+.rem  input {
+    width: 17px;
+    height: 17px; 
+    position: relative;
+    bottom:  1px;
+
+} 
+
+.boten {
+    width: 320px;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    cursor:pointer ;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border-color: rgba(255, 255, 255, 0);
+    margin-bottom: 30px; 
+}
+
+@media screen and (max-width:600px){
+    .form{
+    width: 420px;
+    height: 510px;
+    position: relative;
+    bottom: 120px;
+    }
+    
+}
+
